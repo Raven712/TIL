@@ -1,0 +1,5 @@
+S, A = map(int,(input().split()))
+S = int(S / 2)
+A = int(A / 2) 
+ans = min(S, A)
+print(ans)
