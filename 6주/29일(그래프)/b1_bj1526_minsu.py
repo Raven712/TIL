@@ -16,3 +16,9 @@ for i in range(4, N + 1):
         list_minsu.append(i) # list_minsu에 N이하의 모든 금민수들이 추가됨
 
 print(max(list_minsu))  #그중에서 최대값 출력
+
+
+
+###### 풀이
+
+#
