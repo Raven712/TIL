@@ -32,6 +32,22 @@
 - 모든 정점을 다 방문할 때 유리함. ---> ** 경우의 수, 순열-조합에서 사용됨 **
   - 그러므로 모든 정점을 다 볼 필요가 없거나 , 최단거리 탐색시 BFS 가 더 유리하다.
 
+```python
+가장 간단한 dfs
+
+import sys
+sys.setrecursionlimit(10 ** 6)
+
+visited = [False] * n
+def DFS(start) :
+    visited[start] = True
+    for adj in graph[start] :
+        if not visited[adj]:
+            DFS(adj)    
+```
+
+
+
 
 
 ```python
@@ -61,6 +77,38 @@ def dfs(start):
                 visited[adj] = True #방문 처리
                 stack.append(adj) #스택에 넣음 
 
+                
+#위의코드는 틀렸음. 저렇게하면 dfs가 아니게됨(for adj in graph[cur])
+
+def dfs(start):
+    stack = [start]
+    visited[start] = True
+    while stack:
+        cur = stack.pop()
+        if not visited[cur]:		#pop해주고 난다음에 바로 방문처리를 해준다.
+            visited[cur] = True
+            
+        for adj in graph[cur]:
+            if not visited[adj]:
+                stack.append(adj)
+                
+# 혹은 queue를 이용해서 popleft를 써야함.맨위의코드와 동일하게 하고, stack 대신 queue를 사용.
+#근데 이건 그냥 bfs임. (dfs 아님)
+
+queue = deque()
+
+def bfs(start):
+    visited[start] = True                # 시작 정점 방문 처리
+    queue.append(start)                    # 돌아갈 곳 기록
+
+    while queue:                        # 덱이 빌 때까지(돌아갈 곳이 없을 때까지) 반복
+        cur = queue.popleft()            # 현재 방문 정점(후입선출)
+
+        for adj in graph[cur]:            # 인접한 모든 정점에 대해
+            if not visited[adj]:        # 아직 방문하지 않았다면
+                visited[adj] = True        # 방문처리
+                queue.append(adj)        # 덱에 넣기
+                print(visited
 ```
 
 
@@ -98,3 +146,12 @@ dfs(1)
 
 ```
 
+
+
+## 추가
+
+DFS 는 백트래킹을 한다.
+
+--> 첫번째 정점의 간선중 첫번째 고름 -> 간선을 통해서 간 정점에서 또 첫번쨰 고름 ->...
+
+--> 못가면, 그 전 탐색지로 돌아와서, 안간곳이 있는지 탐색함. 이런식이다 !!!!!!!
