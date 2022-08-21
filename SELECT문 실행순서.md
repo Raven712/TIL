@@ -1,0 +1,1 @@
+SELECT 문 실행순서 PPT에 나와있는거 복사했습니다. FROM => WHERE => GROUP BY => HAVING => SELECT => ORDER BY
