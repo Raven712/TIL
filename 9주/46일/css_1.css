@@ -1,0 +1,13 @@
+body {
+    background-color: aqua;
+    font-size: 200%;
+    text-align: center;
+    border: 1px solid darkcyan;
+}
+
+p {
+    background-color: chartreuse;
+    font-size: 100%;
+    padding: 20px;
+    margin: 50px;
+}
