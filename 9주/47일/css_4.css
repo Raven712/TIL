@@ -1,0 +1,8 @@
+p {
+    text-align: center;
+    border: 1px solid black;
+}
+body {
+    background-image: url('https://img.hankyung.com/photo/201912/53639_104061_5355.jpg');
+    background-size: 100%;
+}
