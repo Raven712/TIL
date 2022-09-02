@@ -1,0 +1,3 @@
+html>head>title+(link)*2 이런게 된다.
+
+startbootstrap 연습하기
