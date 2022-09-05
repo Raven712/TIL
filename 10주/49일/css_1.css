@@ -1,0 +1,9 @@
+ul {
+    list-style-type: circle;
+    
+}
+/* list-style 을 달떄, body에다가 다니까 적용이 안되는것 같다! */
+/* 그리고 클래스지정이 아닌경우엔 위처럼 .을 붙이지않아야 하는것같다. */
+.li2 {
+    list-style: disc;
+}
