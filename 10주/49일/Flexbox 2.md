@@ -17,6 +17,12 @@ div {
   - align-items: start; (교차축의 시작점 (flex-container의 y축 제일 상단))
   - align-items: end; ( 제일 하단. )
 
+- align-self?
+  - align-items를 무시하고, 개별 flex요소만 세로선 상에서 따로 정렬하는것.
+    - 마찬가지로 flex-start, end, center, baseline, stretch가 있음. 개별적용일 뿐임.
+
+
+
 
 
 - justify-content
@@ -28,3 +34,12 @@ div {
     - (1 2 3 4 5)
   - justify-content: space-around ( 요소들 앞뒤, 사이 모두 여유공간이 생김.)
     - ( 1  2  3  4  5 )
+    
+    
+
+- align-content
+  - 수직방향 조절하는것?
+  - 여러 줄이 있을때 줄 사이의 간격을 조절하는것임!!
+
+***
+
