@@ -1,0 +1,26 @@
+<html>
+  <head>
+    <style>
+      .demo2 {
+        font-size: 1.5rem;
+        color:burlywood;
+      }
+      div {
+        font-size : 3rem;
+        color:blueviolet;
+      }
+    </style>
+  </head>
+  <body>
+    <p id="demo"> 안녕 </p>
+    <div class="demo2"> 안녕하세요 </div>
+    <script>
+      document.getElementById("demo").innerHTML = "hello world";
+      var selectedItem = document.getElementsByClassName("demo2").innerHTML = '안녕'
+      const a = document.createElement('a')
+      a.innerText = 'hi'
+      const body = document.querySelector('body')
+      body.appendChild(a)
+    </script>
+  </body>
+</html>
