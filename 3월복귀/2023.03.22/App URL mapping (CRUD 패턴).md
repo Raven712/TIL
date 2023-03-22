@@ -1,0 +1,1 @@
+# App URL mapping (CRUD 패턴)
