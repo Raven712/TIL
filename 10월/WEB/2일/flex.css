@@ -1,0 +1,46 @@
+.test {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 200px;
+  border: 1px solid;
+  border-radius: 20px;
+  color: blueviolet;
+}
+.text {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100px;
+  height: 50px;
+  padding: 20px;
+  border: 1px solid;
+}
+.navbar {
+  box-sizing: border-box;
+  position: sticky;
+  top: 0;
+  border: 1px solid;
+  height: 50px;
+}
+.main{
+  display: flex;
+  flex-direction: row;
+  
+}
+.section{
+  background-color: beige;
+  height: 10rem;
+}
+.section1 {
+  flex-grow: 1;
+
+}
+.section2 {
+  flex-grow: 2;
+
+}
+.section3 {
+  flex-grow: 1;
+}

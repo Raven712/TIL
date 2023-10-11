@@ -1,0 +1,25 @@
+.subtext {
+  display: block;
+  font-size: 16px;
+}
+.title {
+  text-align: center;
+}
+.item_list {
+  width: 900px;
+}
+.item {
+  width: 300px;
+  display: inline-block;
+  
+}
+.image {
+  width: 100%;
+  border-radius: 3px;
+}
+.subtitle {
+  color: grey;
+  font-weight: bold;
+  text-align: center;
+
+}
