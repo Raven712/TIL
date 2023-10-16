@@ -1,4 +1,4 @@
-# WEB 2일_CSS Layout
+# WEB 2일_CSS Flex
 
 - Flexbox에 대해 자세히 알아보자
 

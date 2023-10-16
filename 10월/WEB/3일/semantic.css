@@ -1,0 +1,27 @@
+.nav-list{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+.a-list {
+  text-decoration: none;
+}
+.a-list:visited {
+  color: purple;
+
+}
+.a-list:hover {
+  color: skyblue;
+  background-color: black;
+  border-radius: 3px;
+}
+.nav {
+  display: flex;
+  justify-content: space-between;
+  position: sticky;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+.nav-list-item {
+  margin: 7px;
+}

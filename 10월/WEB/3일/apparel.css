@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+body {
+  font-family: 'Noto Sans KR', sans-serif;
+  min-width: 1280px;
+  color: #333333;
+  }
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  position: sticky;
+}
+.nav-left{
+  margin: 0.6rem;
+}
+.nav-right{
+  display: flex;
+}
+.nav-list {
+  text-decoration: none;
+  margin: 1rem;
+}
+.nav-list:hover {
+  background-color: black;
+  color: white;
+  border-radius: 3px;
+}
+
+.banner {
+  display: flex;
+  height: 700px;
+  background-image: url('./0901\ 실습/assets/apparel.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container {
+  width: 1280px;
+  margin: 0 auto;
+}
+.about {
+  display: flex;
+  margin: 3rem;
+}
+.about-img {
+  width: 500px;
+  border-radius: 1rem;
+  height: auto;
+  margin: auto;
+}
+.about-text{
+  display: flex;
+  margin: 3rem;
+  flex-direction: column;
+}
+.about-title {
+  text-align: center;
+}
+.about-context {
+  text-align: left;
+}
