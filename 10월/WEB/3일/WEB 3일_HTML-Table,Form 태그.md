@@ -79,7 +79,8 @@
     여기서 for agreement와 id agreement가 일치해야함
     ```
 
-
+ - input type은 다양한 종류가 있음
+   - button, checkbox, radio, date, email, password, search, submit, tel, text, url...
 
 결국 사용자가 입력-선택을 하면
 

@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+/* 기본 글꼴 설정 */
+body {
+font-family: 'Noto Sans KR', sans-serif;
+min-width: 1280px;
+color: #333333;
+}
+
+.nav-link{
+  list-style: none;
+
+}
+li:hover{
+  background-color: black;
+  color: aqua;
+}
+.banner{
+  display: flex;
+  background-image: url('../3일/0901\ 실습/assets/apparel.jpeg');
+  height: 700px;
+}
+
+.section {
+  width: 1280px;
+}
