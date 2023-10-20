@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <input type="text" id="text-input">
+  <script>
+    const textinput = document.querySelector('#text-input')
+    textinput.addEventListener('input', function(e){ // 인풋을 받는건 value 속성이 바뀔 떄 마다 이벤트발생임. 변경은 change
+      console.log(e.target.value)
+    })
+    
+  </script>
+</body>
+</html>
