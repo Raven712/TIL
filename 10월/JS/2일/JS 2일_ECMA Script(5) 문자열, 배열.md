@@ -100,6 +100,8 @@
   const result = num_.reduce((acc, num) => {
       return acc + num
   }, 0)
+  
+  --> 피보나치 수열을 JS로 나타낸것
   ```
-
+  
   
