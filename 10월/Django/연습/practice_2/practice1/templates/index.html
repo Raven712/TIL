@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h2>검색모음</h2>
+  <form action="https://search.naver.com/search.naver">
+    네이버 <input type="text" name="query">
+    <input type="submit">
+  </form>
+
+  <h2>pong으로 넘어가기</h2>
+  <form action="/pong" method="GET">
+    pong <input type="text" name="ball"> <!-- name은 views.pong에서 활용하게됨-->
+    <input type="submit">
+  </form>
+
+</body>
+</html>

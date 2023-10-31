@@ -1,4 +1,4 @@
-"""practice_1 URL Configuration
+"""practice_2 URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/3.2/topics/http/urls/
@@ -15,11 +15,10 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from app_1 import views
-from app_2 import views
+from practice1 import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('menu/', views.menu),
-    path('lotto/', views.lotto),
+    path('index/', views.index),
+    path('pong/', views.pong),
 ]
