@@ -16,6 +16,7 @@ mean = []  # 평균 비용, 매 시행에 들어간 골드 합 / N을 할 예정
 success = 0
 fail = 0        # 성공과 실패의 횟수
 fail_lev = []
+cnt_list = []
 for i in range(N):
     # cnt는 트라이횟수 cost는 총비용 list_는 매 시도 기록을 담아놓는곳 
     gold = gold_origin
@@ -56,6 +57,7 @@ for i in range(N):
             list_.append(temp[0])            
             lev = lev + temp[0]
     mean.append(cost) # 현재 mean은 70작 트라이가 끝난 후에 들어간 비용이 모두 들어간 리스트
+    cnt_list.append(cnt)
     if lev >= 70:
         success += 1
     else:
@@ -63,12 +65,15 @@ for i in range(N):
         fail_lev.append(lev)
 
 mean_value = 0
-
+cnt_ = 0
+for i in cnt_list:
+    cnt_ += i
+cnt_average = (cnt_ / len(cnt_list)) # 시행횟수의 평균값
 min_ = min(mean) # N번의 시행 후 최소로 찍힌 값
 max_ = max(mean) # N번의 시행 후 최대로 찍힌 값
 for i in range(N):
     mean_value += mean[i]
 
 mean_value = mean_value / N
-print(f"평균 비용은 {round(mean_value)}, 최소 비용은 {round(min_)}, 최대 비용은 {round(max_)}, 성공 횟수는 {success}, 돈이 바닥난 횟수는{fail}, 실패했을때의 레벨은 {fail_lev} 입니다")
+print(f"평균 비용은 {round(mean_value)}, 최소 비용은 {round(min_)}, 최대 비용은 {round(max_)}, 시도 횟수는 {cnt_average}, 시도 성공 횟수는 {success}, 돈이 바닥난 횟수는{fail}, 실패했을때의 레벨은 {fail_lev} 입니다")
 # print(lev, cnt, cost, Counter(list_))
