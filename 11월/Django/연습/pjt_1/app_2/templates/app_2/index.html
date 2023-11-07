@@ -10,7 +10,7 @@
   </div>
   <div>
     <h2>글작성</h2>
-    <form action="/app_2/create/" method="GET">
+    <form action="{% url 'app_2:create' %}" method="GET">
       <input type="text" name="content">
       <input type="submit">
     </form>

@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <h1>메인 페이지</h1>
+  <ul>
+    {% for i in posting %}
+    <li>제목 : {{ i.title }}
+      내용 : {{ i.content }}
+    </li>
+    {% endfor %}
+  </ul>
+  <a href="{% url 'board:write' %}">ㅁㄹ</a>
+{% endblock content %}

@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <h1>새 글 쓰기</h1>
+  <form action="{% url 'board:create' %}">
+    제목: <input type="text" name="title"><br>
+    내용: <input type="text" name="content">
+    <input type="submit">
+    <!-- submit을 하면 create로 파라미터로 날아간 데이터를 db에 저장해줘야됨 -->
+    <!-- request.GET.get('title'), request.GET.get('content') -->
+  </form>
+{% endblock content %}

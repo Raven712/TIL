@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <p>등록되엇슴</p>
+  <p>제목: {{ title }}</p>
+  <p>내용: {{ content }}</p>
+  <a href="{% url 'board:main' %}">목록으로</a>
+  <!-- a태그에서  url 'board:html파일' 이걸 할때, board:board가 되면 에러가 난다.... 어플이름과 html파일이 동일하게 만들지 말자 -->
+  <!-- 그리고 장고는 html파일 주석도 인식을 하니 코드를 막 적지 말자 -->
+  <!-- board때문에 문제가 생긴게 아니고 여기서 참고하는건 urls.py에 붙어있는 name을 참고하는거라 그런거였음 -->
+{% endblock content %}

@@ -2,5 +2,5 @@
 
 {% block content %}
   <p>글 작성: {{ content }}</p>
-  <a href="/"> 돌아가기 </a>
+  <a href="{% url 'app_2:index' %}"> 돌아가기 </a>
 {% endblock content %}

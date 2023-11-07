@@ -11,6 +11,8 @@ weight = [0.01, 0.38, 0.31, 0.3]
 cnt = 0
 cost = 0
 cnt_power = 0
+cnt_ext = 0
+cnt_gold = 0
 list_ = []
 list_30 = []
 list_50 = []
@@ -21,6 +23,8 @@ while 0 < lev < 70 and gold >= 0:
         gold = gold - 20000 - extract - power
         cost += 20000 + extract + power
         cnt_power += 1
+        cnt_ext += 1
+        cnt_gold += 20000
         cnt += 1
         temp = random.choices([2, 1, 0, -1], weight)
         list_.append(temp[0])
@@ -32,6 +36,8 @@ while 0 < lev < 70 and gold >= 0:
         cost += 50000 + (2 * extract) + (2 * power)
         cnt += 1
         cnt_power += 2
+        cnt_ext += 2
+        cnt_gold += 50000
         temp = random.choices([2, 1, 0, -1], weight)
         list_.append(temp[0])
         list_50.append(temp[0])
@@ -42,6 +48,8 @@ while 0 < lev < 70 and gold >= 0:
         cost += 300000 + (8 * extract) + (5 * power)
         cnt += 1
         cnt_power += 5
+        cnt_ext += 8
+        cnt_gold += 300000
         temp = random.choices([2, 1, 0, -1], weight)
         list_.append(temp[0])
         list_60.append(temp[0])
@@ -52,9 +60,11 @@ while 0 < lev < 70 and gold >= 0:
         cost += 1300000 + (30 * extract) + (10 * power) 
         cnt += 1
         cnt_power += 10
+        cnt_ext += 30
+        cnt_gold += 1300000
         temp = random.choices([2, 1, 0, -1], weight)
         list_.append(temp[0])
         list_70.append(temp[0])
         lev = lev + temp[0]
 
-print(lev, cnt, round(cost), cnt_power, Counter(list_),)
+print(lev, cnt, round(cost), cnt_power, cnt_ext, cnt_gold, Counter(list_),)
