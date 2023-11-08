@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<form action="{% url 'todolist:add' %}">
+  <input type="text" name="contents" maxlength="80">
+  <input type="submit" value="할 일 추가">
+</form>
+<hr>
+
+<ul>
+  {% for i in contents %}
+  <li>할일 : {{ i.content }} 완료여부 : {{ i.completed }} <a href="{% url 'todolist:delete' i.pk %}">삭제</a></li>
+  {% endfor %}
+  
+</ul>
+{% endblock content %}

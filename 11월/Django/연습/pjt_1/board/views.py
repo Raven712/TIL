@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from .models import board1
 # DB의 이름과 view.py 내부의 함수이름이 같아버리면 오류가 생긴다 (board가 중첩이 되버렸음)
 
@@ -31,4 +31,8 @@ def create(request):
         'title' : title,
         'content' : content,
     }
-    return render(request, 'board/create.html', context)
+    return redirect('board:main')
+
+def delete(request, pk):
+    board1.objects.get(id=pk).delete()
+    return redirect('board:main')

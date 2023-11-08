@@ -45,3 +45,5 @@
 render 대신 쓰는거임
 
 import render, redirect 해주고 쓰면됨
+
+return redirect('url') 을 해주면 그냥 url페이지로 바로돌아감

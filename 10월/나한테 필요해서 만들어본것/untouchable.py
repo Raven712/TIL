@@ -67,4 +67,4 @@ while 0 < lev < 70 and gold >= 0:
         list_70.append(temp[0])
         lev = lev + temp[0]
 
-print(lev, cnt, round(cost), cnt_power, cnt_ext, cnt_gold, Counter(list_),)
+print(lev, cnt, round(cost), cnt_power, cnt_ext, cnt_gold, Counter(list_), len(list_60), len(list_70))

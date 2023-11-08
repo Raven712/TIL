@@ -9,5 +9,6 @@ app_name = 'board'
 urlpatterns = [
     path('', views.board, name='main'),
     path('write', views.write, name='write'),
-    path('create', views.create, name='create')
+    path('create', views.create, name='create'),
+    path('delete/<int:pk>', views.delete, name='delete'),
 ]
