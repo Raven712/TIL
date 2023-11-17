@@ -27,3 +27,14 @@ def delete(request, pk):
     identity = Todo.objects.get(id=pk)
     identity.delete()
     return redirect('todolist:index')
+
+def create(request):
+    title = request.GET.get('title')
+    content = request.GET.get('content')
+    return render(request, 'todolist/create.html')
+
+def edit(request):
+    context = {
+        'post' : post,
+    }
+    return render(request, 'todolist/edit.html', context)

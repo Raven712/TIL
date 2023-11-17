@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <h1>리뷰 사이트</h1>
+  <div>
+    {% for i in review %}
+    <a href="{% url 'review:detail' i.pk %}">{{ i.title }}</a>
+    {% endfor %}
+  </div>
+{% endblock content %}
