@@ -1,0 +1,40 @@
+.pw {
+    border: 1px solid blue;
+}
+
+.main {
+    width: 1920px;
+    height: 1080px;
+}
+
+.mainbox {
+    position: absolute;
+    border: 1px solid #AACDFF;
+    border-radius: 10px;
+    width: 670px;
+    height: 960px;
+    display: flex;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+    top: 60px;
+    left: 625px;
+}
+.subbox{
+    width: 470px;
+    height: 818px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    
+}
+
+.genderbutton {
+    display: flex;
+    align-items: center;
+
+}
+h2 {
+    color: #0068FF
+}

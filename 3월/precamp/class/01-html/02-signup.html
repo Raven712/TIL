@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./02-signup.css">
+  <title>회원가입</title>
+</head>
+<body>
+  <div class="main">
+    <div class="mainbox">
+      <div class="subbox">
+        <h2>회원가입을 위해<br>정보를 입력해주세요</h2>
+        <input type="text" placeholder="이메일을 입력해주세요"><br><br> <!--이메일-->
+        <input type="text" placeholder="이름을 입력해주세요"><br><br>
+        <input type="password" class="pw" placeholder="비밀번호를 입력해주세요"><br><br>
+        <input type="password" class="pw" placeholder="비밀번호를 다시 입력해주세요"><br><br>
+        <select name="" id="">
+          <option disabled="true" selected="true">지역을 선택하세요</option>
+          <option>서울</option>
+          <option>대구</option>
+          <option>부산</option>
+        </select>
+        <br><br>
+        <div class="genderbutton">
+          <input type="radio" name="gender"> <!-- 타입 속성 radio가 원형으로 체크박스 만드는것 -->
+          <span>여성</span>
+          <input type="radio" name="gender"> <!-- name태그로 두개의 인풋을 연결시켜주지않으면 둘다 체크가 되버림. -->
+          <span>남성</span>
+        </div>
+        <br><br>
+        <input type="checkbox">
+          <span>이용약관 개인정보 어쩌구</span> <!-- 체크박스는 라디오와 또 조금다름 -->
+        <hr>
+        <button>가입하기</button> <!-- input type="button" value="가입하기" 와 동일한데.. 이걸 굳이 button태그로 만든 이유는, css를 적용시켜주기 위함임 -->
+      </div>
+    </div>
+  </div>
+</body>
+</html>
