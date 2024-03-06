@@ -1,0 +1,168 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+}
+
+.background {
+    width: 1024px;
+    height: 600px;
+    background-image: url("../images/background.png");
+    padding: 20px 0px 0px 20px;
+}
+    /* 패딩을 주는이유 : 그렇지않으면 내부 내용물들이 백그라운드와 완전 겹쳐서 시작함.
+    내부를 패딩으로 채워서 (상-우-하-좌에 패딩을 준것) 백그라운드와 내용물을 띄워놓은것임*/
+
+    /* 백그라운드 이미지: html에서의 이미지태그는 이미지파일을 바꿀때 / css에서의 이미지는 정적으로 이용할때 사용함.
+    */
+.outerbox {
+    width: 808px;
+    height: 544px;
+    background-image: url("../images/outerbox.png");
+
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: row;
+    padding: 32px 0px 0px 32px;
+}
+
+.wrapper_left {
+    width: 208px;
+    height: 472px;
+    display: flex;
+    flex-direction: column;
+}
+/* 정렬옵션이 없으면 (display flex와 flex direction) 헤더와 바디가 튀어나와버림 */
+
+.wrapper_left_header {
+    width: 100%;
+    height: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+/* width: 100%의 의미 : 부모박스의 크기의 100퍼센트만큼이라는 뜻 */
+/* flex를 줘서 정렬을 함 */
+
+.today {
+    font-size: 9px;
+}
+
+.wrapper_left_body {
+    width: 100%;
+    height: 100%;
+    border: 1px solid grey;
+    border-radius: 15px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 30px;
+}
+/* flex-direction을 컬럼으로 줘서 align-items가 가로정렬 옵션임 */
+
+.left_body_header {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.left_body_header_gray {
+    width: 148px;
+    height: 133px;
+    background-color: grey;
+}
+
+.left_body_header_line {
+    border-top: 1px dotted black;
+    margin: 12px 0px;
+}
+/* 어차피 이 라인은 상하 모두 여백이 필요해서 header_gray에서 마진을 주면 이중작업을 해야됨, 그리고 숫자를 두개만 적으면 상-하 순서 */
+
+.left_body_profile {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.body_profile_icon {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+    font-size: 10px;
+    font-weight: lighter;
+    
+}
+
+.fa-regular {
+    margin-right: 5px;
+    
+    
+}
+/* .body_profile_text {
+    display: flex;
+    flex-direction: column;
+} */
+
+.left_body_footer {
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+    width: 100%;
+    height: 100%;
+    font-size: 12px;
+    color: grey
+}
+
+.feeling {
+    margin-bottom: 8px;
+}
+
+.feeling_choice {
+    opacity: 0.5;
+}
+.wrapper_right {
+    width: 524px;
+    height: 472px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-left: 5px;
+}
+
+.wrapper_right_header {
+    width: 510px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0px 15px;
+    align-items: flex-end;
+}
+
+.right_header_title {
+    color: #55B2E4;
+    font-size: 16px;
+}
+
+.right_header_setting {
+    color: #55B2E4;
+    font-size: 9px;
+}
+.wrapper_right_body {
+    width: 510px;
+    height: 445px;
+    border:  1px solid grey;
+    border-radius: 15px;
+    background-color: white;
+
+}
+
+iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
