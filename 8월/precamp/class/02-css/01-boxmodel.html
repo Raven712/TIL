@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        div {
+            width: 80px;
+            height: 80px;
+            border: 1px solid red;
+            padding: 10px;
+        }
+        /* #contentBox {
+            box-sizing: content-box;
+        }
+        #borderBox { 
+            box-sizing: border-box;           <!--보더박스로 웬만하면 고정? -->
+        } */
+         .pb {
+            width: 500px;
+            height: 500px;
+            border: 1px solid blue;
+            display: flex; /* 횡방향 나열로 인해 div들이 일자로 나열됨 */
+            justify-content: center; /*가로 중앙으로옮기기 */
+            align-items: center; /*세로 중앙 */
+         }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <!-- <div id="contentBox">박1</div> 컨텐트박스 -->
+    <!-- <div>박2</div> 그냥 -->
+    <!-- <div id="borderBox">박3</div> 보더박스 -->
+    <div class="pb">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+
+    
+    
+</body>
+</html>
